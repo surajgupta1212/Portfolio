@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:salmon;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li{
+  font-family: century;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: blue;
+  box-shadow: 0px 0px 25px white;
+  padding: 10px 55px;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 8px 8px 10px black;
+
+}
+
+
+
+/* Home Section */
+
+#Home{
+  display: flex;
+  text-align: center;
+  color: red;
+  background-image: url(Images/background.jpg);
+  background-position: center;
+  font-size: 2.7rem;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 850px;
+  justify-content: center;
+  align-items: right;
+  background-size: cover;
+  transition: background 4s ease;
+
+  /* color: whitesmoke; */
+}
+
+#Home::before{
+  content: "";
+  position: absolute; 
+  top: 0;
+  right: 0;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: absolute; */
+  top: 25%;
+  right: 6%;
+  
+}
+
+.headings{
+  font-family: century;
+  text-align: center;
+  font-size: 4rem;
+  margin: 40px 0px;
+
+  
+}
+
+.btn{
+  color: red;
+  background-color: pink;
+  border: 2px solid red;
+  box-shadow: 0 0 6px white, 0 0 10px white, 0 0 15px white;
+  width: 100px;
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+/* About Section */
+
+#About{
+  padding: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 720px;
+  background-image: none;
+  overflow: auto;
+}
+
+#pic{
+  
+  display: flex;
+  
+}
+
+
+#pic img{
+  margin-top: 50px;
+  width: 400px;
+  height: 500px;
+  border-radius: 100%;
+}
+
+#intro{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+
+}
+
+#intro h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+#Portfolio{
+  background-image: url(Images/background2.jpg);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: aliceblue;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 0;
+
+
+}
+
+.gallery{
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.gallery img{
+  width: 380px;
+  height: 280px;
+  margin: 10px;
+}
+
+/* Contact Section */
+
+#Contact{
+  background-image: url(Images/background4.jpg);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px; 
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.input{
+  
+  background-color: pink;
+  padding: 12px;
+  margin: 15px;
+  width: 30%;
+  border: 2px solid red;
+  outline: none;
+}
+
+
+#msg{
+  width: 20%;
+  padding: 10px;
+  margin: 15px;
+  background-color: pink;
+  border: 2px solid red;
+  outline: none;
+
+}
+
+#send{
+  background-color: pink;
+  padding: 10px;
+  width: 10%;
+  margin: 40px;
+  border: 2px solid red;
+  outline: auto;
+
+}
+
+#send:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+
+}
+
+@media only screen and (max-width: 1100px){
+  
+}
